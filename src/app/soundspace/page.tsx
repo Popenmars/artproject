@@ -45,18 +45,18 @@ export default function SoundSpace() {
 
                     <div className={styles.rowTitle}>
                         {[
-                            { img: '/img/artist1.jpg', name: 'Burna Boy', album: 'I Told Them', cover: '/img/cover1.jfif' },
-                            { img: '/img/artist2.jfif', name: 'Wizkid', album: 'Sound Man 2', cover: '/img/cover2.jfif' },
-                            { img: '/img/artist3.jfif', name: 'Davido', album: 'Timeless', cover: '/img/cover3.jfif' },
-                            { img: '/img/artist4.jfif', name: 'Rema', album: 'HeIs', cover: '/img/cover4.jfif' },
-                            { img: '/img/artist5.jfif', name: 'Tekno', album: 'The More the Better', cover: '/img/cover5.jfif' },
-                            { img: '/img/artist6.jfif', name: 'Tems', album: 'Born in the Wild', cover: '/img/cover6.jfif' },
-                            { img: '/img/artist7.jfif', name: 'Arya Star', album: 'When I Turn 21', cover: '/img/cover7.jfif' },
-                            { img: '/img/artist8.jfif', name: 'Tiwa Savage', album: 'Water & Garri', cover: '/img/cover8.jfif' },
-                            { img: '/img/artist9.jfif', name: 'Omah Lay', album: 'Boy Alone', cover: '/img/cover9.jfif' },
-                            { img: '/img/artist10.jfif', name: 'Asake', album: 'Lungu Boy', cover: '/img/cover10.jfif' },
-                            { img: '/img/artist11.jfif', name: 'Fire Boy', album: 'Adedamola', cover: '/img/cover11.jfif' },
-                            { img: '/img/artist12.jfif', name: 'Falz', album: 'Before the Feast', cover: '/img/cover12.jfif' },
+                            { img: '/img/artist1.jpg', name: 'Burna Boy', album: 'I Told Them', cover: '/img/cover1.jpeg' },
+                            { img: '/img/artist2.webp', name: 'Wizkid', album: 'Sound Man 2', cover: '/img/cover2.jpeg' },
+                            { img: '/img/artist3.jpg', name: 'Davido', album: 'Timeless', cover: '/img/cover3.jpeg' },
+                            { img: '/img/artist4.webp', name: 'Rema', album: 'HeIs', cover: '/img/cover4.jpeg' },
+                            { img: '/img/artist5.webp', name: 'Tekno', album: 'The More the Better', cover: '/img/cover5.jpeg' },
+                            { img: '/img/artist6.webp', name: 'Tems', album: 'Born in the Wild', cover: '/img/cover6.jpeg' },
+                            { img: '/img/artist7.jpeg', name: 'Arya Star', album: 'When I Turn 21', cover: '/img/cover7.jpeg' },
+                            { img: '/img/artist8.jpeg', name: 'Tiwa Savage', album: 'Water & Garri', cover: '/img/cover8.jpeg' },
+                            { img: '/img/artist9.jpeg', name: 'Omah Lay', album: 'Boy Alone', cover: '/img/cover9.jpeg' },
+                            { img: '/img/artist10.jpeg', name: 'Asake', album: 'Lungu Boy', cover: '/img/cover10.jpeg' },
+                            { img: '/img/artist11.jpeg', name: 'Fire Boy', album: 'Adedamola', cover: '/img/cover11.jpeg' },
+                            { img: '/img/artist12.jpeg', name: 'Falz', album: 'Before the Feast', cover: '/img/cover12.jpeg' },
                         ].map((item, index) => (
                             <div key={index} >
                                 <div className={styles.itemCard} data-aos="fade-up">
@@ -87,18 +87,18 @@ export default function SoundSpace() {
 
                     <div className={styles.rowTitle}>
                         {[
-                            { img: '/img/artist13.jfif', name: 'Drake', album: 'Nothing was the Same', cover: '/img/cover13.webp' },
-                            { img: '/img/artist14.jfif', name: 'Eminem', album: 'Death of Slim Shady', cover: '/img/cover14.jfif' },
-                            { img: '/img/artist15.jfif', name: 'Rihanna', album: 'Loud', cover: '/img/cover15.jfif' },
-                            { img: '/img/artist16.jfif', name: 'Beyonce', album: 'Cowboy Carter', cover: '/img/cover16.jfif' },
-                            { img: '/img/artist17.jfif', name: 'Labrinth', album: 'Euphoria', cover: '/img/cover17.jfif' },
-                            { img: '/img/artist18.webp', name: 'Khalid', album: 'Free Spirit', cover: '/img/cover18.jfif' },
-                            { img: '/img/artist19.jfif', name: 'DJ Khaled', album: 'God Did', cover: '/img/cover19.jfif' },
-                            { img: '/img/artist20.jfif', name: 'Billie Eilish', album: 'Hit me Hard and Soft', cover: '/img/cover20.jfif' },
-                            { img: '/img/artist21.jfif', name: 'Justin Bieber', album: 'Justice', cover: '/img/cover21.jfif' },
-                            { img: '/img/artist22.jfif', name: 'Lil Wayne', album: 'Welcome 2 Collegrove', cover: '/img/cover22.jfif' },
-                            { img: '/img/artist23.jfif', name: 'Nicki Minaj', album: 'Pink Friday 2', cover: '/img/cover23.jfif' },
-                            { img: '/img/artist24.jfif', name: 'Roddy Rich', album: 'Feed Tha Streets III', cover: '/img/cover24.jfif' },
+                            { img: '/img/artist13.jpeg', name: 'Drake', album: 'Nothing was the Same', cover: '/img/cover13.webp' },
+                            { img: '/img/artist14.jpeg', name: 'Eminem', album: 'Death of Slim Shady', cover: '/img/cover14.jpeg' },
+                            { img: '/img/artist15.jpeg', name: 'Rihanna', album: 'Loud', cover: '/img/cover15.jpeg' },
+                            { img: '/img/artist16.jpeg', name: 'Beyonce', album: 'Cowboy Carter', cover: '/img/cover16.jpeg' },
+                            { img: '/img/artist17.jpeg', name: 'Labrinth', album: 'Euphoria', cover: '/img/cover17.jpeg' },
+                            { img: '/img/artist18.webp', name: 'Khalid', album: 'Free Spirit', cover: '/img/cover18.jpeg' },
+                            { img: '/img/artist19.jpeg', name: 'DJ Khaled', album: 'God Did', cover: '/img/cover19.jpeg' },
+                            { img: '/img/artist20.jpeg', name: 'Billie Eilish', album: 'Hit me Hard and Soft', cover: '/img/cover20.jpeg' },
+                            { img: '/img/artist21.jpeg', name: 'Justin Bieber', album: 'Justice', cover: '/img/cover21.jpeg' },
+                            { img: '/img/artist22.jpeg', name: 'Lil Wayne', album: 'Welcome 2 Collegrove', cover: '/img/cover22.jpeg' },
+                            { img: '/img/artist23.jpeg', name: 'Nicki Minaj', album: 'Pink Friday 2', cover: '/img/cover23.jpeg' },
+                            { img: '/img/artist24.jpeg', name: 'Roddy Rich', album: 'Feed Tha Streets III', cover: '/img/cover24.jpeg' },
                         ].map((item, index) => (
                             <div key={index}>
                                 <div className={styles.itemCard} data-aos="fade-up">
