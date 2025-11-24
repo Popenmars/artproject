@@ -14,8 +14,8 @@ export default function AboutUs() {
                         <div>
                             <div className={styles.glassContainer}>
                                 <div className={styles.aboutRow}>
-                                    <div data-aos="fade-right" data-aos-delay="200">
-                                        <Image src="/img/marslogo1.png" alt="Mars Logo" width={500} height={500} className={styles.aboutImage} />
+                                    <div data-aos="fade-right" data-aos-delay="200" className={styles.aboutImage}>
+                                        <Image src="/img/marslogo1.png" alt="Mars Logo" width={500} height={500} />
                                     </div>
                                     <div data-aos="fade-left" data-aos-delay="400">
                                         <h1 style={{ color: 'var(--color-primary-dark)', fontWeight: 'bold', marginBottom: '1.5rem' }}>About Us...</h1>

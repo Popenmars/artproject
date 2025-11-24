@@ -11,8 +11,8 @@ export default function ArtGalaxy() {
                         <div>
                             <div className={styles.glassContainer}>
                                 <div className={styles.gaRow}>
-                                    <div  data-aos="fade-right" data-aos-delay="200">
-                                        <Image src="/img/art gallery.jpg" alt="Art Galaxy" width={500} height={500} style={{ borderRadius: '10px' }} className={styles.gaImg} />
+                                    <div  data-aos="fade-right" data-aos-delay="200" className={styles.gaImg}>
+                                        <Image src="/img/art gallery.jpg" alt="Art Galaxy" width={500} height={500} style={{ borderRadius: '10px' }} />
                                     </div>
                                     <div  data-aos="fade-left" data-aos-delay="400">
                                         <h1 style={{ color: 'var(--color-primary-dark)', fontWeight: 'bold', marginBottom: '1.5rem' }}>ART GALAXY</h1>

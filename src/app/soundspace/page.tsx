@@ -11,8 +11,8 @@ export default function SoundSpace() {
                         <div>
                             <div className={styles.glassContainer}>
                                 <div className={styles.gaRow}>
-                                    <div data-aos="fade-right" data-aos-delay="200">
-                                        <Image src="/img/music space.jpg" alt="Sound Space" width={500} height={500} className={styles.gaImg} />
+                                    <div data-aos="fade-right" data-aos-delay="200" className={styles.gaImg}>
+                                        <Image src="/img/music space.jpg" alt="Sound Space" width={500} height={500} />
                                     </div>
                                     <div data-aos="fade-left" data-aos-delay="400">
                                         <h1 style={{ color: 'var(--color-primary-dark)', fontWeight: 'bold', marginBottom: '1.5rem' }}>SOUND SPACE</h1>
