@@ -1,0 +1,395 @@
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.glassContainer {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px 0 rgba(173, 73, 225, 0.37);
+    backdrop-filter: blur(25px);
+    color: white;
+    border-radius: 30px;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+        border-radius: 20px;
+        margin-top: 0;
+    }
+}
+
+.loginContainer {
+    position: relative;
+    backdrop-filter: blur(25px);
+    width: 450px;
+    max-width: 90%;
+    border: 2px solid silver;
+    padding: 7.5em 2.5em 4em 2.5em;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    margin: 2rem 0;
+}
+
+.loginTitle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: flex;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    background-color: silver;
+    border-radius: 0 0 20px 20px;
+    height: 70px;
+
+    span {
+        color: #2e073f;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    &::before {
+        content: "";
+        top: 0;
+        left: -30px;
+        position: absolute;
+        border-top-right-radius: 50%;
+        width: 30px;
+        height: 30px;
+        box-shadow: 15px 0 0 0 silver;
+        background: transparent;
+    }
+
+    &::after {
+        content: "";
+        top: 0;
+        right: -30px;
+        position: absolute;
+        border-top-left-radius: 50%;
+        width: 30px;
+        height: 30px;
+        box-shadow: -15px 0 0 0 silver;
+        background: transparent;
+    }
+}
+
+.loginOption {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+
+    .option {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            background-color: white;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+.seperator {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    span {
+        z-index: 1;
+        padding: 0 10px;
+        background: linear-gradient(to top, #2e073f, #ad49e1);
+        color: silver;
+        position: relative;
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background-color: silver;
+        height: 2px;
+        display: block;
+    }
+}
+
+.inputWrapper {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    margin: 20px 0;
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        font-size: 16px;
+        height: 55px;
+        color: silver;
+        background: transparent;
+        padding-inline: 20px 54px;
+        border-radius: 30px;
+        outline: none;
+        border: 2px solid silver;
+
+        &:focus~label,
+        &:valid~label {
+            position: absolute;
+            font-size: 14px;
+            top: -10px;
+            left: 20px;
+            background-color: #ad49e1;
+            color: silver;
+            border-radius: 30px;
+            padding: 0 10px;
+        }
+    }
+
+    label {
+        position: absolute;
+        transition: 0.2s;
+        top: 15px;
+        left: 20px;
+        color: silver;
+        pointer-events: none;
+    }
+
+    .icon {
+        position: absolute;
+        font-size: 20px;
+        top: 18px;
+        right: 25px;
+        color: silver;
+    }
+}
+
+.rememberForgot {
+    justify-content: space-between;
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+
+    a {
+        color: #ad49e1;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: silver;
+        }
+    }
+
+    .rememberMe {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 12px;
+        gap: 10px;
+    }
+}
+
+.inputSubmit {
+    background: silver;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+    color: #ad49e1;
+
+    &:hover {
+        background: #ad49e1;
+        color: silver;
+        border: 1px solid #2e073f;
+    }
+}
+
+.signupLink {
+    text-align: center;
+    margin-top: 1rem;
+
+    button {
+        background: none;
+        border: none;
+        color: #ad49e1;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 5px;
+
+        &:hover {
+            color: silver;
+        }
+    }
+}
+
+/* Modal Styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    backdrop-filter: blur(5px);
+}
+
+.modalContent {
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(25px);
+    border-radius: 30px;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: 1rem;
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+    }
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: none;
+    padding: 0;
+
+    h4 {
+        color: white;
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    button {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: white;
+        font-size: 1.5rem;
+        line-height: 1;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--color-secondary-purple);
+        }
+    }
+}
+
+.modalBody {
+    padding: 0;
+
+    .mb {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        label {
+            color: silver;
+            font-size: 0.95rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 5px;
+            background: transparent;
+            color: silver;
+            font-size: 16px;
+            outline: none;
+
+            &:focus {
+                border-color: var(--color-secondary-purple);
+            }
+
+            &::placeholder {
+                color: rgba(192, 192, 192, 0.5);
+            }
+        }
+    }
+}
+
+.modalFooter {
+    padding: 0;
+    border-top: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+
+    button {
+        background-color: var(--color-primary-dark);
+        color: var(--color-text-silver);
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}

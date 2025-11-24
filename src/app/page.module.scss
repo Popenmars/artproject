@@ -1,0 +1,227 @@
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0; 
+}
+
+.aboutHero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+    background: url('/img/mars.png') no-repeat center center/cover;
+}
+
+.videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
+
+.glassContainer {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px 0 rgba(173, 73, 225, 0.37);
+    backdrop-filter: blur(50px);
+    color: white;
+    border-radius: 30px;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 100px;
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+        border-radius: 20px;
+        margin-top: 0;
+    }
+}
+
+.welcomeText {
+    margin-bottom: 2rem;
+
+    p:first-child {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        margin-bottom: 0.5rem;
+        color: #f0f0f0;
+
+        @media (max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 1.5rem;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    p {
+        
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+        color: #f0f0f0;
+    }
+    .readMoreBtn{
+        background: purple;
+        padding: 10px 60px;
+        cursor: pointer;
+        color: silver;
+        border-radius: 20px;
+        font-size: 17px;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+
+.section {
+    padding: 5rem 0;
+
+    @media (max-width: 768px) {
+        padding: 3rem 0;
+    }
+
+    h2 {
+        color: var(--color-secondary-purple);
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        color: var(--color-primary-dark);
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.contactSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/mars.png') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    color: white;
+
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+}
+
+.contactForm {
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(25px);
+    border-radius: 30px;
+    box-shadow: 0 8px 16px 0 rgba(173, 73, 225, 0.37);
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 5px;
+        background: transparent;
+        color: silver;
+        font-size: 16px;
+        outline: none;
+        &:focus {
+            border-color: var(--color-secondary-purple);
+        }
+    }
+
+    button {
+        background-color: var(--color-primary-dark);
+        color: var(--color-text-silver);
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.testimonialSection {
+    padding: 5rem 0;
+    
+    @media (max-width: 768px) {
+        padding: 3rem 0;
+    }
+}
+
+.testimonialRow {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 0;
+    }
+}
+.aboutRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    .aboutImage {
+        border-radius: 20px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+}
+}
+.testimonialRow > div {
+    width: 100%;
+    max-width: 100%;
+}
