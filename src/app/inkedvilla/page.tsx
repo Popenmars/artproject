@@ -33,7 +33,7 @@ export default function InkedVilla() {
                         <button>Comics</button>
                         <button>Novels</button>
                         <button>Poems</button>
-                        <button>Story-Dramas</button>
+                        <button>Dramas</button>
                         <button>Articles</button>
                         <button>Biography</button>
                     </div>
