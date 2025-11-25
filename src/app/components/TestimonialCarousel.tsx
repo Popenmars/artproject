@@ -47,8 +47,23 @@ export default function TestimonialCarousel() {
         return () => clearInterval(interval);
     }, []);
 
+    const handlePrev = () => {
+        setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    };
+
+    const handleNext = () => {
+        setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+    };
+
     return (
         <div className={styles.carousel}>
+            <button
+                className={`${styles.arrow} ${styles.arrowLeft}`}
+                onClick={handlePrev}
+                aria-label="Previous testimonial"
+            >
+                &#8249;
+            </button>
             <div className={styles.slides} style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                 {testimonials.map((item, index) => (
                     <div key={index} className={styles.slide}>
@@ -65,6 +80,13 @@ export default function TestimonialCarousel() {
                     </div>
                 ))}
             </div>
+            <button
+                className={`${styles.arrow} ${styles.arrowRight}`}
+                onClick={handleNext}
+                aria-label="Next testimonial"
+            >
+                &#8250;
+            </button>
         </div>
     );
 }

@@ -47,9 +47,9 @@ export default function Home() {
         </div>
       </section>
 
-      <ArtGalaxySection />
-      <InkedVillaSection />
-      <SoundSpaceSection />
+      <ArtGalaxySection isLandingPage={true} />
+      <InkedVillaSection isLandingPage={true} />
+      <SoundSpaceSection isLandingPage={true} />
 
       <section className={styles.contactSection} id="contact">
         <div className="container">

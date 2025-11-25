@@ -64,6 +64,10 @@
             background-color: var(--color-secondary-purple);
             color: var(--color-white);
         }
+        &.active {
+            background-color: var(--color-secondary-purple);
+            color: var(--color-white);
+        }
     }
 }
 
@@ -99,6 +103,11 @@
 
         h4 {
             color: var(--color-primary-dark);
+            margin-bottom: 0.5rem;
+        }
+        h5 {
+            color: #666;
+            font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
         p {
