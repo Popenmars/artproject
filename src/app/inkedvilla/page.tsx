@@ -4,16 +4,16 @@ import Image from 'next/image';
 import styles from './page.module.scss';
 
 const newArrivals = [
-    { img: '/img/book.jpg', title: 'Happiness Killers', type: 'Novel', price: "₦ 4,000" },
+    { img: '/img/book.jpg', title: 'Happiness Killers', type: 'Novels', price: "₦ 4,000" },
     { img: '/img/book13.png', title: 'Nearly All Men in Lagos...', type: 'Dramas', price: "₦ 4,500" },
-    { img: '/img/book2.png', title: 'Saving Mungo Park', type: 'Novel', price: "₦ 3,000" },
+    { img: '/img/book2.png', title: 'Saving Mungo Park', type: 'Novels', price: "₦ 3,000" },
     { img: '/img/book3.png', title: 'Harmattan by Ivan Srsen', type: 'Poems', price: "₦ 2,000" },
     { img: '/img/book4.png', title: 'De-Nigerianization', type: 'Articles', price: "₦ 5,000" },
     { img: '/img/book5.png', title: 'Pickled Moments', type: 'Poems', price: "₦ 1,000" },
     { img: '/img/book6.png', title: 'Ivory Night', type: 'Comics', price: "₦ 5,000" },
     { img: '/img/book7.png', title: 'And It came to Pass', type: 'Articles', price: "₦ 2,000" },
     { img: '/img/book8.png', title: 'Unleash by Gbadamosi', type: 'Biography', price: "₦ 1,500" },
-    { img: '/img/book9.png', title: 'Unleash by Foluso', type: 'Novel', price: "₦ 5,000" },
+    { img: '/img/book9.png', title: 'Unleash by Foluso', type: 'Novels', price: "₦ 5,000" },
     { img: '/img/book10.png', title: 'A Trip To Kano', type: 'Dramas', price: "₦ 3,000" },
     { img: '/img/book11.png', title: 'Entangled by Oluwakemi', type: 'Poems', price: "₦ 3,500" },
 ];
@@ -26,10 +26,10 @@ const bestSelling = [
     { img: '/img/book17.png', title: 'An Ordinary Wonder', type: 'Poems', price: "₦ 1,500" },
     { img: '/img/book18.png', title: 'The Escapades of...', type: 'Comics', price: "₦ 2,000" },
     { img: '/img/book19.jpg', title: 'The 5 Reset', type: 'Articles', price: "₦ 5,000" },
-    { img: '/img/book20.png', title: 'Vantage', type: 'Novel', price: "₦ 2,000" },
+    { img: '/img/book20.png', title: 'Vantage', type: 'Novels', price: "₦ 2,000" },
     { img: '/img/book21.png', title: 'The Secret Lives', type: 'Comics', price: "₦ 1,000" },
     { img: '/img/book22.jpg', title: 'Small Business, Big...', type: 'Articles', price: "₦ 5,000" },
-    { img: '/img/book23.png', title: 'A Spell of good things', type: 'Novel', price: "₦ 5,000" },
+    { img: '/img/book23.png', title: 'A Spell of good things', type: 'Novels', price: "₦ 5,000" },
     { img: '/img/book25.gif', title: 'Stay With Me', type: 'Dramas', price: "₦ 3,000" },
 ];
 
@@ -80,8 +80,8 @@ export default function InkedVilla() {
                             Comics
                         </button>
                         <button
-                            className={activeFilter === 'Novel' ? styles.active : ''}
-                            onClick={() => handleFilterClick('Novel')}
+                            className={activeFilter === 'Novels' ? styles.active : ''}
+                            onClick={() => handleFilterClick('Novels')}
                         >
                             Novels
                         </button>

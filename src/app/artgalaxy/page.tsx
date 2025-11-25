@@ -5,24 +5,24 @@ import styles from './page.module.scss';
 
 const featuredCollections = [
     { img: '/img/IMG-20240920-WA0052.jpg', title: 'Red Dawn', type: 'Photography', price: '₦ 28,000' },
-    { img: '/img/IMG-20240915-WA0008.jpg', title: 'Holy Captivation', type: 'Drawing', price: '₦ 150,000' },
-    { img: '/img/IMG-20240915-WA0007~2.jpg', title: 'Feast of the First Men', type: 'Print', price: '₦ 90,000' },
+    { img: '/img/IMG-20240915-WA0008.jpg', title: 'Holy Captivation', type: 'Drawings', price: '₦ 150,000' },
+    { img: '/img/IMG-20240915-WA0007~2.jpg', title: 'Feast of the First Men', type: 'Prints', price: '₦ 90,000' },
     { img: '/img/art3.jpg', title: 'Remnants', type: 'Abstract Art', price: '₦ 280,000' },
-    { img: '/img/art1.jpg', title: 'For me Not', type: 'Painting', price: '₦ 50,000' },
-    { img: '/img/art7.jpeg', title: 'Abudance', type: 'Sculpture', price: '₦ 380,000' },
+    { img: '/img/art1.jpg', title: 'For me Not', type: 'Paintings', price: '₦ 50,000' },
+    { img: '/img/art7.jpeg', title: 'Abudance', type: 'Sculptures', price: '₦ 380,000' },
     { img: '/img/IMG-20240926-WA0049.jpg', title: 'War Machine', type: 'Photography', price: '₦ 28,000' },
-    { img: '/img/IMG-20240812-WA0028.jpg', title: 'Paper_heart', type: 'Drawing', price: '₦ 78,000' },
+    { img: '/img/IMG-20240812-WA0028.jpg', title: 'Paper_heart', type: 'Drawings', price: '₦ 78,000' },
 ];
 
 const beyondCanvas = [
-    { img: '/img/art6.jpg', title: 'Life in Green', type: 'Print', price: '₦ 45,000' },
+    { img: '/img/art6.jpg', title: 'Life in Green', type: 'Prints', price: '₦ 45,000' },
     { img: '/img/IMG-20240926-WA0050.jpg', title: 'Juicy Ken', type: 'Photography', price: '₦ 55,000' },
     { img: '/img/art4.jpg', title: 'Fierce to Friendly', type: 'Abstract Art', price: '₦ 290,000' },
     { img: '/img/IMG-20240926-WA0051.jpg', title: 'Volatile', type: 'Photography', price: '₦ 30,000' },
-    { img: '/img/art8.jpeg', title: 'Set me Free', type: 'Sculpture', price: '₦ 850,000' },
-    { img: '/img/art5.jpg', title: 'Unkown Love', type: 'Painting', price: '₦ 240,000' },
-    { img: '/img/art9.jpeg', title: 'Eden\'s View', type: 'Drawing', price: '₦ 238,000' },
-    { img: '/img/art10.jpeg', title: 'Nature Expression', type: 'Print', price: '₦ 178,000' },
+    { img: '/img/art8.jpeg', title: 'Set me Free', type: 'Sculptures', price: '₦ 850,000' },
+    { img: '/img/art5.jpg', title: 'Unkown Love', type: 'Paintings', price: '₦ 240,000' },
+    { img: '/img/art9.jpeg', title: 'Eden\'s View', type: 'Drawings', price: '₦ 238,000' },
+    { img: '/img/art10.jpeg', title: 'Nature Expression', type: 'Prints', price: '₦ 178,000' },
 ];
 
 export default function ArtGalaxy() {
@@ -66,20 +66,20 @@ export default function ArtGalaxy() {
                     <p className={styles.sectionTitle}>Discover Your Art.</p>
                     <div className={styles.filterButtons}>
                         <button
-                            className={activeFilter === 'Painting' ? styles.active : ''}
-                            onClick={() => handleFilterClick('Painting')}
+                            className={activeFilter === 'Paintings' ? styles.active : ''}
+                            onClick={() => handleFilterClick('Paintings')}
                         >
                             Paintings
                         </button>
                         <button
-                            className={activeFilter === 'Sculpture' ? styles.active : ''}
-                            onClick={() => handleFilterClick('Sculpture')}
+                            className={activeFilter === 'Sculptures' ? styles.active : ''}
+                            onClick={() => handleFilterClick('Sculptures')}
                         >
                             Sculptures
                         </button>
                         <button
-                            className={activeFilter === 'Drawing' ? styles.active : ''}
-                            onClick={() => handleFilterClick('Drawing')}
+                            className={activeFilter === 'Drawings' ? styles.active : ''}
+                            onClick={() => handleFilterClick('Drawings')}
                         >
                             Drawings
                         </button>
@@ -90,8 +90,8 @@ export default function ArtGalaxy() {
                             Photography
                         </button>
                         <button
-                            className={activeFilter === 'Print' ? styles.active : ''}
-                            onClick={() => handleFilterClick('Print')}
+                            className={activeFilter === 'Prints' ? styles.active : ''}
+                            onClick={() => handleFilterClick('Prints')}
                         >
                             Prints
                         </button>
